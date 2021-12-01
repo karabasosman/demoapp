@@ -27,7 +27,7 @@ jobs:
         # The script to run
         script: |
           github.rest.issues.create({
-              karabasosman,
-              demoapp,
+              'karabasosman',
+              'demoapp',
               title: 'test'});
 
