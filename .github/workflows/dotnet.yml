@@ -26,8 +26,8 @@ jobs:
       with:
         # The script to run
         script: |
-          octokit.rest.issues.create({
-              context.repo.owner,
-              context.repo,
-              'test'});
+          github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo,
+              title: 'test'});
 
