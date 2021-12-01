@@ -27,7 +27,7 @@ jobs:
         # The script to run
         script: |
           github.rest.issues.create({
-              owner: context.repo.owner,
-              repo: context.repo,
+              karabasosman,
+              demoapp,
               title: 'test'});
 
