@@ -21,3 +21,13 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
+    - name: GitHub Script
+      uses: actions/github-script@v5.0.0
+      with:
+        # The script to run
+        script: |
+          octokit.rest.issues.create({
+              context.repo.owner,
+              context.repo,
+              'test',});
+
