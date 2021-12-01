@@ -29,5 +29,5 @@ jobs:
           octokit.rest.issues.create({
               context.repo.owner,
               context.repo,
-              'test',});
+              'test'});
 
